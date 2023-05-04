@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<style>
+    /* 전체 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #f8f8f8;
+}
+
+/* 페이지 이름 스타일 */
+#page-name {
+  font-size: 2em;
+  color: #ff69b4; /* 분홍색 */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 팬아트 페이지 스타일 */
+#fan-art {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px #dcdcdc;
+}
+
+/* 글쓰기 버튼 스타일 */
+.write-btn {
+  display: block;
+  float: right;
+  background-color: #ff69b4; /* 분홍색 */
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease; /* 배경색 변화 애니메이션 */
+}
+
+/* 마우스 호버 기능 */
+.write-btn:hover {
+  background-color: #f08080; /* 배경색 변경 */
+}
+
+/* 게시글 목록 스타일 */
+.post-list {
+  margin-top: 20px;
+}
+
+/* 게시글 제목 스타일 */
+.post-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 게시글 작성자 스타일 */
+.post-writer {
+  font-size: 1.2em;
+  color: #808080; /* 회색 */
+  margin-bottom: 5px;
+}
+
+/* 게시글 내용 스타일 */
+.post-content {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* 링크 스타일 */
+a {
+  color: #ff69b4; /* 링크 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+  transition: color 0.5s ease; /* 링크 색상 변화 애니메이션 */
+}
+
+/* 마우스 호버 기능 */
+a:hover {
+  color: #f08080; /* 링크 색상 변경 */
+}
+
+	</style>
+    <title>ENCORE PAGE - 팬아트</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- 페이지 이름 -->
+    <h1 id="page-name">ENCORE PAGE</h1>
+    <h2 class="section-heading">팬아트</h2>
+
+    <!-- 글쓰기 버튼 -->
+    <div class="write-button">
+      <a href="#">글쓰기</a>
+    </div>
+
+    <!-- 게시글 내역 -->
+    <div class="post-list">
+      <div class="post">
+        <h3 class="post-title">팬아트 1</h3>
+        <p class="post-content">팬아트 내용</p>
+      </div>
+      <div class="post">
+        <h3 class="post-title">팬아트 2</h3>
+        <p class="post-content">팬아트 내용</p>
+      </div>
+      <div class="post">
+        <h3 class="post-title">팬아트 3</h3>
+        <p class="post-content">팬아트 내용</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
