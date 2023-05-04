@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+    nav {
+  background-color: #333;
+  color: #FFF;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #FA0397;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+nav ul li:hover > ul {
+  display:inherit;
+}
+
+nav ul ul li {
+  width:200px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top:-60px;
+  left:200px;
+}
+
+   </style>
+  <title>My Website</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li>
+          <a href="/community">커뮤니티</a>
+          <ul>
+            <li><a href="/community/performances">공연후기</a></li>
+            <li><a href="/community/freeboard">자유게시판</a></li>
+            <li><a href="/community/album-reviews">앨범 리뷰</a></li>
+            <li><a href="/community/travel-buddies">동행 구하기</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Website</h1>
+
+    <div id="content">
+      <%- body %>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2023 BlackPink
+  </footer>
+</body>
+</html>
+
+</html>
